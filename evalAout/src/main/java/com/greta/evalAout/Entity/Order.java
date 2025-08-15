@@ -1,6 +1,5 @@
 package com.greta.evalAout.Entity;
 
-import java.util.Date;
 import java.util.Set;
 
 import jakarta.persistence.Entity;
@@ -21,9 +20,9 @@ public class Order {
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Long orderId;
 
-    private Date date;
+    private Integer date;
 
-    private Integer price;
+    private Integer cartPrice;
 
     private Integer productNumber;
 
@@ -39,9 +38,9 @@ public class Order {
     )
     private Set<Product> product;
 
-    public Order(Date date, Integer price, Integer productNumber) {
+    public Order(Integer date, Integer cartPrice, Integer productNumber) {
         this.date = date;
-        this.price = price;
+        this.cartPrice = cartPrice;
         this.productNumber = productNumber;
     }
 
@@ -56,20 +55,20 @@ public class Order {
         this.orderId = orderId;
     }
 
-    public Date getDate() {
+    public Integer getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(Integer date) {
         this.date = date;
     }
 
-    public Integer getPrice() {
-        return price;
+    public Integer getCartPrice() {
+        return cartPrice;
     }
 
-    public void setPrice(Integer price) {
-        this.price = price;
+    public void setCartPrice(Integer cartPrice) {
+        this.cartPrice = cartPrice;
     }
 
     public Integer getProductNumber() {
