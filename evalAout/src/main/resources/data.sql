@@ -1,0 +1,16 @@
+INSERT INTO product (name, price, overview, stock, quantity) VALUES
+('Chaise design', 50, 'Chaise confortable en bois massif', 10, 1),
+('Table en chêne', 150, 'Table solide pour votre salle à manger', 5, 1),
+('Lampe vintage', 80, 'Lampe rétro pour éclairer votre pièce', 20, 1),
+('Canapé 3 places', 450, 'Grand canapé en tissu gris', 3, 1),
+('Bureau moderne', 200, 'Bureau en métal et bois clair', 7, 1),
+('Étagère murale', 60, 'Étagère pratique pour le rangement', 15, 1),
+('Buffet en bois massif', 350, 'Buffet avec rangements spacieux', 4, 1),
+('Table basse', 120, 'Table basse en verre et métal', 6, 1),
+('Lit double', 500, 'Lit confortable avec cadre en bois', 2, 1),
+('Commode blanche', 180, 'Commode 4 tiroirs style moderne', 8, 1),
+('Fauteuil relax', 220, 'Fauteuil inclinable très confortable', 5, 1),
+('Armoire penderie', 400, 'Grande armoire avec portes coulissantes', 3, 1),
+('Tabouret de bar', 70, 'Tabouret réglable en hauteur', 12, 1),
+('Bibliothèque', 250, 'Grande bibliothèque en bois clair', 4, 1),
+('Miroir mural', 90, 'Miroir design pour salon ou chambre', 10, 1);
