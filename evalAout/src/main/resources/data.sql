@@ -14,3 +14,15 @@ INSERT INTO product (name, price, overview, stock, quantity) VALUES
 ('Tabouret de bar', 70, 'Tabouret réglable en hauteur', 12, 1),
 ('Bibliothèque', 250, 'Grande bibliothèque en bois clair', 4, 1),
 ('Miroir mural', 90, 'Miroir design pour salon ou chambre', 10, 1);
+
+INSERT INTO customer (email) VALUES
+('alice.dupont@example.com'),
+('benoit.martin@example.com'),
+('charlotte.lefebvre@example.com'),
+('david.laurent@example.com'),
+('emma.moreau@example.com'),
+('francois.dubois@example.com'),
+('helene.robert@example.com'),
+('julien.bernard@example.com'),
+('marie.lambert@example.com'),
+('nicolas.rousseau@example.com');

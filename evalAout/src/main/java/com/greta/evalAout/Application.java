@@ -1,4 +1,4 @@
-package com.greta.evalAout.Application;
+package com.greta.evalAout;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

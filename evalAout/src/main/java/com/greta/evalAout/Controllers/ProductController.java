@@ -31,6 +31,12 @@ public class ProductController {
     public ProductController(ProductService productService) {
         this.productService = productService;
     }
+
+    @GetMapping
+    public ResponseEntity<List<Product>> getAllProducts() {
+    List<Product> products = productService.getAllProduct();
+    return ResponseEntity.ok(products);
+}
     
     @GetMapping("/product/search")
     public ResponseEntity<List<Product>> searchProduct(@RequestParam String name) {

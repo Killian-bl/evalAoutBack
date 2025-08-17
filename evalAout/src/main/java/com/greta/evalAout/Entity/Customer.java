@@ -1,5 +1,7 @@
 package com.greta.evalAout.Entity;
 
+import java.util.List;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -20,11 +22,10 @@ public class Customer {
 
     @OneToMany
     @JoinColumn(name= "orderId")
-    private Order order;
+    private List<Order> order;
 
-    public Customer(String email, Order order) {
+    public Customer(String email) {
         this.email = email;
-        this.order = order;
     }
 
     public Customer() {
@@ -46,11 +47,11 @@ public class Customer {
         this.email = email;
     }
 
-    public Order getOrder() {
+    public List<Order> getOrder() {
         return order;
     }
 
-    public void setOrder(Order order) {
+    public void setOrder(List<Order> order) {
         this.order = order;
     }
 
